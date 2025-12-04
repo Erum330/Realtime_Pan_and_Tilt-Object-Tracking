@@ -53,7 +53,7 @@ def run_tracking_and_vision():
     print("Vision Tracking Active with 4-Slider HSV Tuner. Press 'd' to exit.")
 
     # Define the kernel used for cleaning
-    kernel = np.ones((11,11), np.uint8)
+    kernel = np.ones((15,15), np.uint8)
 
     while True:
         isTrue, frame = capture.read()
