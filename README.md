@@ -52,7 +52,7 @@ Key Features
 
     -   **Crucially:** You must ensure the Arduino is programmed to read serial data in the format `"pan_value,tilt_value\n"` and move the servos accordingly, sending `"OK"` back once the movement is initiated or complete.
 
-⚙️ Configuration
+Configuration
 ----------------
 
 You must adjust the following constants in the Python script to match your hardware and environment:
@@ -67,7 +67,7 @@ You must adjust the following constants in the Python script to match your hardw
 | `LOST_REQUIRED` | Frames without detection before triggering the smooth return home. | `6` |
 | `FACE_DETECT_THRESHOLD` | Time (in seconds) a face must be visible to trigger the emergency stop. | `3.0` |
 
-🚀 Running the Tracker
+ Running the Tracker
 ----------------------
 
 1.  Ensure your camera is connected (it uses index `1`: `cv2.VideoCapture(1)`).
@@ -90,7 +90,7 @@ You must adjust the following constants in the Python script to match your hardw
 | **`b`** | Start tracking **BLUE** objects. |
 | **`q`** / **`ESC`** | Quit the application and release hardware resources. |
 
-🧠 Technical Deep Dive
+Technical Deep Dive
 ----------------------
 
 ### Control Mechanism
@@ -133,5 +133,6 @@ This prevents the system from being distracted by distant noise or overly large 
 **GitHub Repository:** https://github.com/Erum330/Realtime_Pan_and_Tilt-Object-Tracking.git 
 
 **Youtube Link:** https://youtu.be/4pnOp_KU1B4 
+
 
 
